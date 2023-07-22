@@ -4,13 +4,23 @@
     <meta charset="UTF-8">
     <title>Age Calculator</title>
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <p>
-        No we <span id="node-version"></span>,
-        Chromium <span id="chrome-version"></span>,
-        and Electron <span id="electron-version"></span>.
-    </p>
+    <h1>Age Calculator</h1>
+    <input type="text" id="age" placeholder="Enter your age">
+    <button id="btn" onclick="submit()">Calculate</button>
+    <p id="result">Waiting for calculation...</p>
 </body>
+<script>
+    function submit() {
+        var age = document.getElementById("age").value;
+        var result = document.getElementById("result");
+        if (age && age > 0){
+            result.innerHTML = "Congratulation. Your age is " + age + " years old. So that you was born in " + (new Date().getFullYear() - age) + ".";
+        } else {
+            result.innerHTML = "Please enter your age so we can calculate it.";
+        }
+    }
+</script>
 </html>
