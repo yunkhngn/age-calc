@@ -1,3 +1,60 @@
 html{
-    background-color: beige;
+    background-color: #f5f5f5;
+    color: #3F2305;
+    text-align: center;
+    justify-content: center;
+    font-family: 'sf pro display', 'sf pro icons', 'helvetica neue', helvetica, arial, sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+    margin-top: 1.5em;
+    text-align: center;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+}
+
+
+h4{
+    font-size: 1em;
+    font-weight: 400;
+    margin-top: -1.2em;
+    color: #341c03be;
+}
+
+button{
+    background-color: #F2EAD3;
+    color: #3F2305;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    margin: 1em;
+    cursor: pointer;
+    font-family: 'sf pro display', 'sf pro icons', 'helvetica neue', helvetica, arial, sans-serif;
+}
+
+button:hover{
+    background-color: #DFD7BF;
+    transition: ease-in-out 0.3s;
+}
+
+input{
+    color: #3F2305;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    font-family: 'sf pro display', 'sf pro icons', 'helvetica neue', helvetica, arial, sans-serif;
+}
+
+#result{
+    width: 50%;
+    font-size: light;
+    font-weight: bold;
+    margin: auto;
+    margin-top: 1em;
+    justify-content: center;
+    text-align: center;
+    font-family: 'sf pro display', 'sf pro icons', 'helvetica neue', helvetica, arial, sans-serif; 
 }
