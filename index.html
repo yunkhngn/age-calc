@@ -19,8 +19,22 @@
         var age = document.getElementById("age").value;
         var result = document.getElementById("result");
         if (age && age > 0){
-            result.innerHTML = "Congratulation. Your age is " + age + " years old. So that you was born in " + (new Date().getFullYear() - age) + ".";
-        } else {
+            var year = new Date().getFullYear() - age;
+            if (year > 0){
+                result.innerHTML = "Congratulation. Your age is " + age + " years old. So that you was born in " + year + ".";
+            }
+            else if (year < 0){
+                year = year * -1;
+                result.innerHTML = "Congratulation. Your age is " + age + " years old. So that you was born in " + year + " BC.";
+            }
+        } 
+        else if (age < 0) {
+            result.innerHTML = "Please enter your age correctly.";
+        }
+        else if (age == 0) {
+            result.innerHTML = "You are a newborn baby. Congratulation.";
+        }
+        else {
             result.innerHTML = "Please enter your age so we can calculate it.";
         }
     }
